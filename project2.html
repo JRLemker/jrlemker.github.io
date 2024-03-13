@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Make body at least full height of the viewport */
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background-color: rgb(144, 150, 165); /* Main color */
+            color: #fff;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: width 0.3s ease-in-out;
+        }
+
+        @media (min-width: 1024px) {
+            .sidebar {
+                left: 0; /* Adjusted */
+            }
+        }
+
+        .sidebar.show {
+            width: 220px;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar nav ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: block;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar nav ul li a:hover {
+            background-color: #555;
+        }
+
+        .project-details {
+            margin-left: 0; /* Adjusted */
+            padding: 50px;
+            flex: 1; /* Take remaining vertical space */
+        }
+
+        .project-details h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .project-details img {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 5px;
+        }
+
+        .project-details p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(144, 150, 165); /* Main color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ffd700;
+        }
+
+        footer {
+            background-color: rgb(144, 150, 165); /* Main color */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+
+        /* Toggle Button Styles */
+        .toggle-btn {
+            display: none; /* Initially hidden */
+        }
+
+        /* Show toggle button on smaller screens */
+        @media (max-width: 1024px) {
+            .toggle-btn {
+                display: block; /* Show on smaller screens */
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                background-color: rgb(144, 150, 165);
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                z-index: 999; /* Ensure it's above other elements */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 class="title">Project Details</h1> -->
+    
+    <!-- <button class="toggle-btn" id="toggleBtn">Toggle Navigation</button>
+    
+    <section class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    -->
+    <section class="project-details">
+        <div class="container">
+            <h2>Project Title</h2>
+            <img src="project1-details.jpg" alt="Project 1 Details">
+            <p>Description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula lacinia, blandit ipsum ut, mollis nulla. Phasellus tincidunt euismod sapien, at ultricies purus blandit vitae.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula lacinia, blandit ipsum ut, mollis nulla. Phasellus tincidunt euismod sapien, at ultricies purus blandit vitae.</p>
+            <a href="test.html" class="button">Back to Projects</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+<!--
+    <script>
+        // Get the sidebar element
+        const sidebar = document.getElementById('sidebar');
+        const toggleBtn = document.getElementById('toggleBtn');
+
+        // Show the sidebar initially if screen width is larger than 1024px
+        if (window.innerWidth > 1024) {
+            sidebar.classList.add('show');
+        }
+
+        // Add event listener for mouse movements
+        document.addEventListener('mousemove', function(event) {
+            // Check if mouse is on the left edge of the screen
+            if (event.clientX <= 150 && window.innerWidth > 1024) { // Adjust the value as needed
+                sidebar.classList.add('show');
+            } else {
+                sidebar.classList.remove('show');
+            }
+        });
+
+        // Toggle sidebar on button click for smaller screens
+        toggleBtn.addEventListener('click', function() {
+            sidebar.classList.toggle('show');
+        });
+    </script>
+-->
+</body>
+</html>
