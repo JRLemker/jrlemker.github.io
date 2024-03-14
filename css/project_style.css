@@ -111,7 +111,8 @@
         }
 
         .project a:hover {
-            background-color: #ffd700;
+            background-color: coral; 
+            /*#ffd700;*/
         }
 
         footer {
