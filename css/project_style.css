@@ -150,10 +150,10 @@
             min-height: 100vh; /* Make body at least full height of the viewport */
         }
 
-        .container {
+        /*.container {
             width: 80%;
             margin: auto;
-        }
+        }*/
 
         .title {
             text-align: center;
@@ -225,6 +225,7 @@
             display: block;
             margin: 0 auto 20px;
             border-radius: 5px;
+
         }
 
         .project-details p {
