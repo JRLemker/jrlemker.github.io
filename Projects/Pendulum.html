@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pendulum Project</title>
+    <title>Inverted Pendulum</title>
     <link rel="stylesheet" type="text/css" href="../css/project_style.css">
 
 </head>
@@ -25,10 +25,73 @@
     -->
     <section class="project-details">
         <div class="container">
-            <h2>Launch Controller</h2>
-            <img src="project1-details.jpg" alt="Project 1 Details">
-            <p>Description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula lacinia, blandit ipsum ut, mollis nulla. Phasellus tincidunt euismod sapien, at ultricies purus blandit vitae.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ligula lacinia, blandit ipsum ut, mollis nulla. Phasellus tincidunt euismod sapien, at ultricies purus blandit vitae.</p>
+            <h2>Inverted Pendulum Project</h2>
+            <img src="..\assets\img\Inverted-pendulum-as-analogy-of-self-balancing-robot.png" alt="Inverted Pendulum">
+            <figcaption>Diagram of the inverted pendulum. Source: https://www.researchgate.net/figure/Inverted-pendulum-as-analogy-of-self-balancing-robot_fig1_236030928</figcaption>
+            <br>
+            <p>The goal of this project is to design and build a self balancing inverted pendulum to begin learning control systems and PID tuning. A few things I hope to get out of the project include learning how to model in Matlab Simulink, control system calculations including forward and inverese kinematics, how to use the model to tune PID, and learn how to code and setup the hardware. </p>
+            
+        
+            <p>I wanted the design to be a rail setup so that the motor would move the sled in a linear motion to adjust the pendulum. I figured this would simplify the process later on when I am trying to do PID tuning. To do this, I purchased rails with linear bearings. To determine where the pendulum is, I had purchased a rotary encoder that will allow the pendulum to spin freely and return position data. I plan on 3D printing the structure and the sled for the pendulum. All the parts ordered so far are in the table below. </p>
+        <table border="3">
+            <!-- Table Header -->
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Link</th>
+            </tr>
+            <!-- Table Row 1 -->
+            <tr>
+                <td>Limit Switches</td>
+                <td>$4.89</td>
+                <td><a href="https://www.amazon.com/gp/product/B07YKH3TDR/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1">amazon.com</a> </td>
+            </tr>
+            <!-- Table Row 2 -->
+            <tr>
+                <td>CNC Shield and Stepper Driver</td>
+                <td>$14.99</td>
+                <td> <a href="https://www.amazon.com/dp/B0B24YS695?ref=ppx_yo2ov_dt_b_fed_asin_title">amazon.com</a> </td>
+            </tr>
+            <!-- Table Row 3 -->
+            <tr>
+                <td>Belt and gears</td>
+                <td>$9.99</td>
+                <td> <a href="https://www.amazon.com/dp/B0CK21WWGV?ref=ppx_yo2ov_dt_b_fed_asin_title">amazon.com</a> </td>
+            </tr>
+            <tr>
+                <td>Linear Bearings</td>
+                <td>$9.99</td>
+                <td> <a href="https://www.amazon.com/dp/B0CL3WD28D?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1">amazon.com</a> </td>
+            </tr>
+            <tr>
+                <td>Rotary Encoder</td>
+                <td>$15.83</td>
+                <td> <a href="https://www.amazon.com/dp/B01MZ4V1XP?ref=ppx_yo2ov_dt_b_fed_asin_title">amazon.com</a> </td>
+            </tr>
+            <tr>
+                <td>Linear Motion Rod</td>
+                <td>$8.99</td>
+                <td> <a href="https://www.amazon.com/dp/B0CWRKB559?ref=ppx_yo2ov_dt_b_fed_asin_title">amazon.com</a> </td>
+            </tr>
+            <tr>
+                <td>Stepper Motor</td>
+                <td>$7.99</td>
+                <td> <a href="https://www.amazon.com/dp/B07THK76QQ?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1">amazon.com</a> </td>
+            </tr>
+            <tr>
+                <td>Power Supply</td>
+                <td>$9.98</td>
+                <td> <a href="https://www.amazon.com/dp/B0CW2PJQLJ?ref=ppx_yo2ov_dt_b_fed_asin_title">amazon.com</a> </td>
+            </tr>
+
+        </table>
+
+
+
+
+
+
+
             <a href="../Portfolio.html" class="button">Back to Projects</a>
         </div>
     </section>
