@@ -316,7 +316,7 @@ def main():
     print("=== Add New Portfolio Project ===\n")
 
     title = prompt("Project title (e.g. 'Launch Controller System')")
-    tile_description = prompt("Short description for the portfolio page")
+    tile_description = prompt("Short description for the portfolio page tile")
     default_filename = title.lower().replace(" ", "_").replace("/", "-") + ".html"
     filename = prompt("Detail page filename", default_filename)
 
