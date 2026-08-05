@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receiver Backing Plate & Photodiode PCB</title>
+    <link rel="stylesheet" type="text/css" href="../css/project_style.css">
+</head>
+<body>
+    <section class="project-details">
+        <h2>Receiver Backing Plate & Photodiode PCB</h2>
+        <div class="container">
+            <p>I modified an existing backing plate design used to receive laser light from the transmitter. I created the drawing to have it sent out for counterbores and through-holes for the photodiodes and VCSELs, then hand-tapped every hole in-house with an SM05 tap.</p>
+            <img src="../assets/img/receiver-backing-plate.jpg" alt="Placeholder: Modified receiver backing plate (receiver-backing-plate.jpg)" title="Placeholder — save as: receiver-backing-plate.jpg" style="width: 50%;">
+            <p style="text-align:center; font-style: italic; color:#888;">[Image placeholder &mdash; save file as: receiver-backing-plate.jpg]</p>
+            <p>I designed a PCB to provide power to all the photodiodes on the plate &mdash; up to 32 at a time &mdash; and included PTC fuses on the board in case of a short, after an earlier experience with a short on one of the photodiode boards.</p>
+            <img src="../assets/img/photodiode-power-pcb.jpg" alt="Placeholder: Photodiode power distribution PCB (photodiode-power-pcb.jpg)" title="Placeholder — save as: photodiode-power-pcb.jpg" style="width: 50%;">
+            <p style="text-align:center; font-style: italic; color:#888;">[Image placeholder &mdash; save file as: photodiode-power-pcb.jpg]</p>
+            <p>I also used AI to help build a post-processing script that visualizes how centered the laser is on the photodiode ring, using a center-of-mass calculation weighted by the measured voltages. The AI got close on the first pass, but I had to go through the code myself to correct its math.</p>
+            <img src="../assets/img/laser-centricity-visualization.jpg" alt="Placeholder: Laser centricity visualization output (laser-centricity-visualization.jpg)" title="Placeholder — save as: laser-centricity-visualization.jpg" style="width: 50%;">
+            <p style="text-align:center; font-style: italic; color:#888;">[Image placeholder &mdash; save file as: laser-centricity-visualization.jpg]</p>
+            <br>
+            <br>
+
+            <a href="../Portfolio.html" class="button">Back to Projects</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ryan Lemker. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
