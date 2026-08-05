@@ -58,26 +58,26 @@ body, html {
     <section class="project-details">
         <h2>Concentrator Reflector (FTPR) Design & Manufacturing</h2>
         <div class="container">
-            <p>I owned the concentrator/reflector system on our laser transmitter's receiver, from redesign through installation on flight hardware. The reflectors focus incoming laser light onto the PV cells, so their geometry, surface quality, and alignment directly affect how much power the receiver collects.</p>
+            <p>I owned the concentrator/reflector system on our laser transmitter's receiver, from redesign through installation on flight hardware. The reflectors focus incoming laser light onto the PV cells, so their geometry, surface quality, and alignment directly affect how much power the receiver collects. It is worth noting that I am limited in the photos that I am able to post here about the part with certain aspects being propietary information. </p>
 <hr>
 <h2>Process</h2>
 <div class="collapsible-container">
   <div class="collapsible">1. Original Design & Tooling</div>
   <div class="content">
-      <p>The original reflector design already existed, but had poor CAD practice behind it &mdash; asymmetry, broken features, and no design for manufacturing. I corrected the model, added features like glue-application holes, and applied DFM principles (minimum bend radius, internal radii, minimum hole size) so it could actually be produced reliably.</p>
-      <p>We used Fotofab to electroetch the profile and precision-form the pieces, which let us attach the electroformed reflectors to the PV carriers. Each reflector required four gluing operations to the CPCs (compound parabolic concentrators) plus four more for the mounting tabs &mdash; eight per part, or roughly 1,200 individual gluing operations across the ~150-piece batch. I also swapped the reflective material to something cheaper and easier to manufacture than the specialized material used before, and designed tooling to bend the sheet metal reflectors.</p>
-      <img src="../assets/img/ftpr-original-electroformed-reflector.jpg" alt="Placeholder: Original electroformed reflector and adapter hat (ftpr-original-electroformed-reflector.jpg)" title="Placeholder — save as: ftpr-original-electroformed-reflector.jpg" style="width: 50%;">
-      <p style="text-align:center; font-style: italic; color:#888;">[Image placeholder &mdash; save file as: ftpr-original-electroformed-reflector.jpg]</p>
+      <p>The original reflector design already existed, but had poor CAD practice behind it; asymmetry, broken features, and no design for manufacturing. I corrected the model, added features like glue-application holes, and applied DFM principles (minimum bend radius, internal radii, minimum hole size) so it could actually be produced reliably.</p>
+      <p>We used Fotofab to electroetch the profile and precision-form the pieces, which let us attach the electroformed reflectors to the PV carriers. Each reflector required four gluing operations to the CPCs (compound parabolic concentrators) plus four more for the mounting tabs; eight per part, or roughly 1,200 individual gluing operations across the ~150-piece batch. I also swapped the reflective material to something cheaper and easier to manufacture than the specialized material used before, and designed tooling to bend the sheet metal reflectors.</p>
+      <img src="../assets/img/ftpr-original-electroformed-reflector.jpeg" alt="Placeholder: Original electroformed reflector and adapter hat (ftpr-original-electroformed-reflector.jpg)" title="Placeholder — save as: ftpr-original-electroformed-reflector.jpg" style="width: 50%;">
+      <p style="text-align:center; font-style: italic; color:#888;">Array of original CPCs</p>
   </div>
 
 
 
   <div class="collapsible">2. FTPR Redesign</div>
   <div class="content">
-      <p>Once the receiver moved to a drone platform, weight became the top priority &mdash; ahead of optical efficiency and surface quality. The original gold-plated, electroformed reflector had a complex wall shape for angular effectiveness, but was heavy. I designed a new reflector (FTPR &mdash; flanged truncated pyramidal reflector) out of a commercial reflective metal, and combined the adapter hat with the reflector itself, which roughly cut the number of assembly operations in half.</p>
-      <p>A coworker ran the optical simulation to find the optimal wall angle; I owned the product from design through implementation &mdash; CAD modeling, drawings, and working with suppliers.</p>
-      <img src="../assets/img/ftpr-redesign-before-after.jpg" alt="Placeholder: FTPR redesign compared to the original reflector (ftpr-redesign-before-after.jpg)" title="Placeholder — save as: ftpr-redesign-before-after.jpg" style="width: 50%;">
-      <p style="text-align:center; font-style: italic; color:#888;">[Image placeholder &mdash; save file as: ftpr-redesign-before-after.jpg]</p>
+      <p>Once the receiver moved to a drone platform, weight became the top priority; ahead of optical efficiency and surface quality. The original gold-plated, electroformed reflector had a complex wall shape for angular effectiveness, but was heavy. I designed a new reflector (FTPR; flanged truncated pyramidal reflector) out of a commercial reflective metal, and combined the adapter hat with the reflector itself, which roughly cut the number of assembly operations in half.</p>
+      <p>A coworker ran the optical simulation to find the optimal wall angle; I owned the product from design through implementation; CAD modeling, drawings, and working with suppliers.</p>
+      <img src="../assets/img/ftpr-redesign-before-after.jpeg" alt="Placeholder: FTPR redesign compared to the original reflector (ftpr-redesign-before-after.jpg)" title="Placeholder — save as: ftpr-redesign-before-after.jpg" style="width: 50%;">
+      <p style="text-align:center; font-style: italic; color:#888;">New FTPR array</p>
   </div>
 
 
@@ -92,8 +92,8 @@ body, html {
   <div class="collapsible">4. Cleaning Process</div>
   <div class="content">
       <p>I developed a process to safely and effectively clean grease and fingerprints off the reflective surfaces without damaging them. I built a jig to hold the reflectors while flushing them with degreaser, rinsing in tap water, and finishing with a distilled water rinse. I confirmed the process didn't affect the reflective surface by testing cleaned parts with a spectrometer.</p>
-      <img src="../assets/img/ftpr-cleaning-jig.jpg" alt="Placeholder: Reflector cleaning jig (ftpr-cleaning-jig.jpg)" title="Placeholder — save as: ftpr-cleaning-jig.jpg" style="width: 50%;">
-      <p style="text-align:center; font-style: italic; color:#888;">[Image placeholder &mdash; save file as: ftpr-cleaning-jig.jpg]</p>
+      <!-- <img src="../assets/img/ftpr-cleaning-jig.jpg" alt="Placeholder: Reflector cleaning jig (ftpr-cleaning-jig.jpg)" title="Placeholder — save as: ftpr-cleaning-jig.jpg" style="width: 50%;">
+      <p style="text-align:center; font-style: italic; color:#888;">[Image placeholder &mdash; save file as: ftpr-cleaning-jig.jpg]</p> -->
   </div>
 
 
@@ -101,18 +101,20 @@ body, html {
   <div class="collapsible">5. Optical & Thermal Validation</div>
   <div class="content">
       <p>I designed and set up an optical test on the optics table to validate the geometry of the FTPR. I also ran thermal testing to confirm the FTPR could handle the higher temperatures it would see in the receiver &mdash; the manufacturer had already validated the material, but the geometry still needed internal validation, which was required for TRL7.</p>
-      <img src="../assets/img/ftpr-optical-test-setup.jpg" alt="Placeholder: Optical test setup for validating FTPR geometry (ftpr-optical-test-setup.jpg)" title="Placeholder — save as: ftpr-optical-test-setup.jpg" style="width: 50%;">
-      <p style="text-align:center; font-style: italic; color:#888;">[Image placeholder &mdash; save file as: ftpr-optical-test-setup.jpg]</p>
+      <!-- <img src="../assets/img/ftpr-optical-test-setup.jpg" alt="Placeholder: Optical test setup for validating FTPR geometry (ftpr-optical-test-setup.jpg)" title="Placeholder — save as: ftpr-optical-test-setup.jpg" style="width: 50%;">
+      <p style="text-align:center; font-style: italic; color:#888;">[Image placeholder &mdash; save file as: ftpr-optical-test-setup.jpg]</p> -->
   </div>
 
 
 
   <div class="collapsible">6. Folding & Mounting Tooling</div>
   <div class="content">
-      <p>I designed tooling to fold the reflectors. The process itself wasn't implemented in-house, but our supplier used it to improve their tolerancing and consistency &mdash; parts had previously been inconsistent and out of spec.</p>
+      <p>I designed tooling to fold the reflectors. The process itself wasn't implemented in-house, but our supplier used it to improve their tolerancing and consistency; parts had previously been inconsistent and out of spec.</p>
       <p>I also designed tooling to attach the FTPRs to the receiver. Because the new reflectors were so much lighter, they were hard to keep aligned while the adhesive cured, and if one tipped over during assembly it risked damaging roughly $250k worth of PV cells on the receiver. I built a jig that mounted to the board with a grid to hold and align each FTPR in place, which made placement slightly more involved but drastically reduced the risk of knocking over the reflectors and kept everything aligned through cure.</p>
-      <img src="../assets/img/ftpr-mounting-jig.jpg" alt="Placeholder: Alignment jig for mounting FTPRs to the receiver (ftpr-mounting-jig.jpg)" title="Placeholder — save as: ftpr-mounting-jig.jpg" style="width: 50%;">
-      <p style="text-align:center; font-style: italic; color:#888;">[Image placeholder &mdash; save file as: ftpr-mounting-jig.jpg]</p>
+      <img src="../assets/img/ftpr-mounting-jig.jpeg" alt="Placeholder: Alignment jig for mounting FTPRs to the receiver. Waiting on permission to post." title="Placeholder — save as: ftpr-mounting-jig.jpg" style="width: 50%;">
+      <p style="text-align:center; font-style: italic; color:#888;">Alignment Tool</p>
+      <img src="../assets/img/forming-tool.jpeg" alt="Placeholder: Alignment jig for mounting FTPRs to the receiver (ftpr-mounting-jig.jpg)" title="Placeholder — save as: ftpr-mounting-jig.jpg" style="width: 50%;">
+      <p style="text-align:center; font-style: italic; color:#888;">Forming Tool</p>
   </div>
 </div>
 <hr>
